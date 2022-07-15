@@ -1,0 +1,17 @@
+.search_input input {
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 19px;
+  box-shadow: 0 5px 4px rgb(0 0 0 / 20%);
+  border: none;
+  outline: none;
+  border-radius: 0px 15px 0 15px;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.form-control:focus {
+  border: transparent;
+  border-radius: 15px 0px 15px 0px;
+  box-shadow: 0 5px 4px rgb(0 0 0 / 20%);
+}

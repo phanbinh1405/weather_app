@@ -1,0 +1,9 @@
+.notif {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 30px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}

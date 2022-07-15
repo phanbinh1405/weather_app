@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import WeatherContainer from './Component/WeatherContainer/WeatherContainer';
 
 function App() {
+  const [background, setBackground] = useState('./images/hot.png');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className='d-flex justify-content-center align-items-center'
+      style={{
+        height: '100vh',
+        background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(${background}) center center / cover no-repeat`,
+      }}
+    >
+      <WeatherContainer background={background} setBackground={setBackground} />
     </div>
   );
 }
